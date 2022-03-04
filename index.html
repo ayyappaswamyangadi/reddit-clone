@@ -1,76 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit | Devang Sir</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-</head>
-<body>
-    
-<header>
-    <ul class="alignHeader">
-        <li> <strong> My Sub Reddit </strong></li>
-        <li>-</li>
-        <li>Home</li>
-        <li>-</li>
-        <li>All</li>
-        <li>-</li>
-        <li>Random</li>
-        <li>-</li>
-        <li>Users</li>
-    </ul>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- my own code <nav class="alignNav">
-    <ul class="alignNav1">
-        <li><img src="assets/reddit-logo.png" alt="Logo" height="80" width="80"></li>
-    </ul>
-    <div class="alignNav2">
-    <ul class="alignSubNav2">
-        <li class="alignList">hot</li>
-        <li class="alignList">new</li>
-        <li class="alignList">rising</li>
-        <li class="alignList">controversial</li>
-        <li class="alignList">top</li>
-        <li class="alignList">gilded</li>
-        <li class="alignList">wiki</li>
-    </ul>
-</div>
-    <ul class="alignNav3">
-        <li id="name">devang Sharma(2000)</li>
-    </ul>
-</nav> -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
 
-<nav class="nav-2">
-    <img class="reddit-logo" src="assets/logo.png" alt="logo">
-</nav>
-
-<div class="reddit-profile">
-    <ul>
-        <li>hot</li>
-        <li>new</li>
-        <li>rising</li>
-        <li>controversial</li>
-        <li>top</li>
-        <li>gilded</li>
-        <li>wiki</li>
-    </ul>
-</div>
-
-<div class="user-profile">
-    <ul>
-        <li>iayyappaswamy</li>
-        <li>(57)</li>
-        <li><strong>Preferences</strong></li>
-        <li>logout</li>
-    </ul>
-</div>
-
-
-
+    <title>Reddit</title>
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
-</body>
+  </head>
+
+  <body>
+    <header>
+      <ul class="nav_1">
+        <li><strong> My Subreddit</strong></li>
+        <li class="hyphen">-</li>
+        <li>Home</li>
+        <li class="hyphen">-</li>
+        <li>All</li>
+        <li class="hyphen">-</li>
+        <li>Random</li>
+        <li class="hyphen">-</li>
+        <li>Users</li>
+      </ul>
+    </header>
+
+    <nav>
+      <img
+        src="assets/logo.png"
+        alt="REDDIT-LOGO"
+        class="reddit-logo"
+        title="home"
+      />
+
+      <ul class="nav_2-1">
+        <li class="nav2-1_Items">Hot</li>
+        <li class="nav2-1_Items">New</li>
+        <li class="nav2-1_Items">Rising</li>
+        <li class="nav2-1_Items">Controversial</li>
+        <li class="nav2-1_Items">Top</li>
+        <li class="nav2-1_Items">Glided</li>
+        <li class="nav2-1_Items">wiki</li>
+      </ul>
+
+      <ul class="nav_2-2">
+        <li class="nav2-2_Items">iayyappaswamy</li>
+        <li class="nav2-2_Items">(4500)</li>
+        <li class="nav2-2_Items"><strong>Preferences</strong></li>
+        <li class="nav2-2_Items">Logout</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="numberDiv">
+        <div class="number">1</div>
+      </div>
+
+      <div class="post-votes">
+        <div class="arrow up" onclick="upvote()"></div>
+        <div id="votes">1000</div>
+        <div class="arrow down" onclick="downvote()"></div>
+      </div>
+
+      <div class="post-body">
+        <div class="project"><a href="'#" class="post-title"> Make a Reddict Clone</a>
+        <strong> self.myprojects</strong></div>
+        <p class="project">
+          <strong> Submitted 3 Hours Ago by </strong>
+          <a class="submit-link" href="#"> iayyappaswamy </a>
+          <strong> to </strong>
+          <a class="submit-link" href="#">/r/redditclones</a>
+        </p>
+
+        <div class="post-options project">
+          <span> 150 comments </span>
+          <span> &nbsp;share </span>
+          <span> &nbsp;save </span>
+          <span> &nbsp;hide </span>
+          <span> &nbsp;report </span>
+          <span> &nbsp;crosspost </span>
+        </div>
+      </div>
+
+      <div class="profile-buttons">
+        <div class="div-search">
+          <input type="search" placeholder="search" />
+          &nbsp;&nbsp;&nbsp;  <i class="fas fa-search" style="color: gray;"></i>
+        </div>
+        <div>
+          <input type="button" value="Submit a new link" />
+        </div>
+        <div>
+          <input type="button" value="Submit a new text post" />
+        </div>
+        <div>
+          <input type="button" value="create your own subreddit" />
+        </div>
+
+        <div class="progress">
+          <div>
+            <p class="progress-content">daily reddit gold goal</p>
+          </div>
+          <div id="progress-bar">
+            <p class="progress-content progress-bar"></p>
+          </div>
+          <div>
+            <p class="progress-content progress-content-percentage">75%</p>
+          </div>
+          <div>
+            <button class="helpButton">help support reddit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
